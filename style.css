@@ -1,0 +1,81 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: rgb(78, 73, 239);
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 12, 73)
+}
+#main{
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+}
+.card{
+  position: absolute;  /*position wise doesn't care about parent*/
+  /* transform: translate(-50%,-50%); /*shape k center wise beech mei ajata hai */ 
+    
+  height: 300px;
+  width: 230px;
+  border : 1px solid black;
+  top : 50%;
+  left: 50%;
+  border-radius : 20px;
+  overflow: hidden;
+}
+#card2{
+  /*rotate: -5deg; /* transform ki poperty hai */
+  transform: translate(-50%,-50%) rotate(-5deg);
+  background-color: green;
+  z-index:3;
+  
+} 
+#card3{
+  /* rotate: -10deg; */
+  transform: translate(-50%,-50%) rotate(-10deg);
+  background-color: #802000;
+  z-index:2;
+}
+#card4{
+  /* rotate: -15deg; */
+  transform: translate(-50%,-50%) rotate(-15deg);
+  background-color: #685eb5;
+  z-index: 1; /*to keep element above/below others */
+}
+#card1{
+  z-index: 10;
+  transform: translate(-50%,-50%);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* apne aap se ccentered hojati hai*/
+
+
+}
+#card2:hover{
+    z-index: 40;
+}
+#card3:hover{
+    z-index: 40;
+}
+#card4:hover{
+    z-index: 40;
+}
